@@ -1,0 +1,14 @@
+{
+  "name": "personal_portfolio",
+  "version": "1.0.0",
+  "description": "This is a portfolio website for me",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Chakib Afraoucene",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

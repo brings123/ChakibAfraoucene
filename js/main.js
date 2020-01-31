@@ -12,4 +12,20 @@ $(document).ready(function() {
 
     return false;
   });
+  let nav_offset_top = $(".showcase").height() + 50;
+
+  function navbarFixed() {
+    if ($(".showcase").length) {
+      $(window).scroll(function() {
+        let scroll = $(window).scrollTop();
+        if (scroll >= nav_offset_top) {
+          $(".navbar").addClass("navbar_fixed");
+        } else {
+          $(".navbar").removeClass("navbar_fixed");
+        }
+      });
+    }
+  }
+
+  navbarFixed();
 });

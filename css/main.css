@@ -3,6 +3,7 @@
 }
 :root {
   --primaryColor: #ff4f5a;
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
   --secondaryColor: #385a64;
 }
 body {
@@ -182,6 +183,9 @@ nav .nav-item .nav-link {
   text-transform: uppercase;
   margin-right: 2rem;
 }
+.work .buttons-group button.active {
+  color: var(--primaryColor);
+}
 .work .buttons-group button:focus,
 .work .buttons-group button:active {
   outline: none;
@@ -198,3 +202,22 @@ nav .nav-item .nav-link {
   padding: 0;
   margin-bottom: 3rem;
 }
+.work .grid .element-item .work-img:hover img {
+  filter: brightness(1.02) drop-shadow(1px 8px 30px #b1afaf);
+  transition: all 0.6s;
+}
+/* navbar fixed */
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: var(--box-shadow);
+  z-index: 999;
+  transition: background 1s ease;
+}
+
+/* Intial state */

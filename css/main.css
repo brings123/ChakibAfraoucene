@@ -61,5 +61,85 @@ nav .nav-item .nav-link {
   margin-top: 10vh;
 }
 .showcase .headers {
-  padding-top: 10vh;
+  padding-top: 8vh;
+}
+.buttons {
+  margin-top: 2rem;
+  margin-left: 0 !important;
+}
+button {
+  font-weight: 600 !important;
+  border: var(--primaryColor) solid 2px !important;
+  text-transform: uppercase;
+  border-radius: 2rem !important;
+  transition: all 0.6s;
+}
+.showcase {
+  height: 80vh;
+}
+button:hover {
+  color: white !important;
+  background-color: var(--primaryColor);
+}
+/* About me */
+.about-img {
+  height: 80vh;
+}
+.about .introduce {
+  padding-top: 2rem;
+}
+.about .introduce h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font: normal bold 49px/60px "Roboto", sans-serif;
+  letter-spacing: 21px;
+}
+.about .introduce p {
+  font-size: 1.3rem;
+  margin-top: 1rem !important;
+}
+.intro {
+  color: var(--primaryColor);
+}
+/* Services */
+.services {
+  padding: 3rem 3rem;
+}
+.header p {
+  padding-bottom: 1.5rem;
+  color: var(--secondaryColor);
+}
+.header h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.img {
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  justify-items: center;
+  padding: 0.5rem 0;
+}
+.card {
+  width: 16rem;
+  margin: none !important;
+  padding: 0 !important;
+  border: none;
+  background: rgba(248, 252, 253, 0.973);
+  transition: box-shadow 0.7s ease;
+}
+.card:hover {
+  box-shadow: 3px 5px 25px -8px rgba(0, 0, 0, 0.7);
+}
+.services .container .row .col-md-4 {
+  margin: 0 !important;
+  padding: 0 !important;
 }

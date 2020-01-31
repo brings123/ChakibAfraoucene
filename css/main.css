@@ -67,7 +67,7 @@ nav .nav-item .nav-link {
   margin-top: 2rem;
   margin-left: 0 !important;
 }
-button {
+.buttons button {
   font-weight: 600 !important;
   border: var(--primaryColor) solid 2px !important;
   text-transform: uppercase;
@@ -77,7 +77,7 @@ button {
 .showcase {
   height: 80vh;
 }
-button:hover {
+.buttons button:hover {
   color: white !important;
   background-color: var(--primaryColor);
 }
@@ -103,10 +103,10 @@ button:hover {
 }
 /* Services */
 .services {
-  padding: 3rem 3rem;
+  padding: 5rem 3rem;
 }
 .header p {
-  padding-bottom: 1.5rem;
+  padding-bottom: 3rem;
   color: var(--secondaryColor);
 }
 .header h3 {
@@ -130,11 +130,14 @@ button:hover {
 }
 .card {
   width: 16rem;
-  margin: none !important;
+  margin: 1rem auto !important;
   padding: 0 !important;
   border: none;
   background: rgba(248, 252, 253, 0.973);
   transition: box-shadow 0.7s ease;
+}
+.card .card-body .card-title {
+  font-weight: 600;
 }
 .card:hover {
   box-shadow: 3px 5px 25px -8px rgba(0, 0, 0, 0.7);
@@ -142,4 +145,56 @@ button:hover {
 .services .container .row .col-md-4 {
   margin: 0 !important;
   padding: 0 !important;
+}
+/* Work section */
+
+.work {
+  padding: 2rem 4rem;
+}
+.work .grid .col-md-4 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.work .grid .col-md-4 .work-img {
+}
+.work h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.work h2 span.logo {
+  font-weight: 700;
+  font-size: 5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.work .grid h2 + h2 {
+  margin-bottom: 1rem;
+}
+.work .buttons-group {
+  margin: 3rem 0;
+}
+.work .buttons-group button {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+.work .buttons-group button:focus,
+.work .buttons-group button:active {
+  outline: none;
+}
+.work .grid .element-item h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.work .grid .element-item p {
+  color: var(--secondaryColor);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3rem;
 }

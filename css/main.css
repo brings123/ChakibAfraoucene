@@ -290,3 +290,38 @@ nav .nav-item .nav-link {
   height: 1rem;
   width: 1rem;
 }
+/* Technologies */
+.technologies {
+  padding: 5rem 4rem;
+}
+.technologies h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.technologies h6 {
+  font-size: 0.9rem;
+  padding-bottom: 3rem;
+  color: var(--secondaryColor);
+}
+.technologies img {
+  max-width: 100%;
+  max-height: 100%;
+  filter: brightness(0.7);
+}
+.technologies img:hover {
+  filter: brightness(1);
+}
+.technologies .tech-img {
+  width: 100px;
+  height: 100px;
+  padding: 1rem 0rem;
+  margin: 3rem 0rem;
+}
+.technologies .tech-img h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.8;
+  margin-top: 1.5rem;
+  text-transform: none;
+}

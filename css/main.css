@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  position: relative;
 }
 
 /* Navbar */
@@ -20,7 +21,7 @@ body {
 .navbar-brand {
   font-weight: 600;
 }
-.nav-item.active .nav-link {
+.nav-item a.active {
   color: var(--primaryColor) !important;
 }
 

@@ -318,6 +318,8 @@ nav .nav-item .nav-link {
   height: 100px;
   padding: 1rem 0rem;
   margin: 3rem 0rem;
+  justify-content: center;
+  align-items: center;
 }
 .technologies .tech-img h3 {
   font-size: 0.8rem;

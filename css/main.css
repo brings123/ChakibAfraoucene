@@ -60,7 +60,7 @@ nav .nav-item .nav-link {
   color: var(--secondaryColor);
 }
 .showcase {
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 .showcase .headers {
   padding-top: 8vh;
@@ -105,7 +105,7 @@ nav .nav-item .nav-link {
 }
 /* Services */
 .services {
-  padding: 5rem 3rem;
+  padding: 4rem 4rem;
 }
 .header p {
   padding-bottom: 3rem;
@@ -151,7 +151,7 @@ nav .nav-item .nav-link {
 /* Work section */
 
 .work {
-  padding: 2rem 4rem;
+  padding: 4rem 4rem;
 }
 .work .grid .col-md-4 img {
   max-width: 100%;
@@ -224,7 +224,7 @@ nav .nav-item .nav-link {
 /* Intial state */
 /* Experience Section */
 .experience {
-  padding: 2rem 4rem;
+  padding: 4rem 4rem;
 }
 .experience .header-section h3 {
   font-weight: 700;
@@ -293,7 +293,7 @@ nav .nav-item .nav-link {
 }
 /* Technologies */
 .technologies {
-  padding: 5rem 4rem;
+  padding: 4rem 4rem;
 }
 .technologies h3 {
   font-size: 2rem;
@@ -357,7 +357,7 @@ nav .nav-item .nav-link {
 }
 /* Responsive */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   body {
     overflow-x: hidden !important;
     width: 100%;

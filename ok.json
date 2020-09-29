@@ -1,0 +1,22 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [3.0834, 36.7324],
+                    [3.0887, 36.7348],
+                    [3.0887, 36.7348],
+                    [3.0834, 36.7324],
+                    [3.0834, 36.7324]
+                ]
+            ]
+        },
+        "properties": {
+            "zone": "snd1gh",
+            "coefficient": 1.523
+        }
+    }]
+}

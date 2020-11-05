@@ -1,11 +1,17 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primaryColor: #ff4f5a;
   --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
   --secondaryColor: #385a64;
 }
+
 body {
   font-family: "Muli", sans-serif;
   font-size: 14px;
@@ -18,9 +24,11 @@ body {
   color: var(--primaryColor);
   font-weight: 500;
 }
+
 .navbar-brand {
   font-weight: 600;
 }
+
 .nav-item a.active {
   color: var(--primaryColor) !important;
 }
@@ -28,6 +36,7 @@ body {
 .nav-item .nav-link:hover {
   color: var(--primaryColor) !important;
 }
+
 nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
@@ -38,6 +47,7 @@ nav .nav-item .nav-link {
   max-width: 100%;
   max-height: 100%;
 }
+
 .showcase .headers h5,
 .showcase .headers h6,
 .showcase .headers h3 {
@@ -59,16 +69,20 @@ nav .nav-item .nav-link {
   padding-left: 2rem;
   color: var(--secondaryColor);
 }
+
 .showcase {
   margin-top: 20vh;
 }
+
 .showcase .headers {
   padding-top: 8vh;
 }
+
 .buttons {
   margin-top: 2rem;
   margin-left: 0 !important;
 }
+
 .buttons button {
   font-weight: 600 !important;
   border: var(--primaryColor) solid 2px !important;
@@ -76,41 +90,51 @@ nav .nav-item .nav-link {
   border-radius: 2rem !important;
   transition: all 0.6s;
 }
+
 .showcase {
   height: 80vh;
 }
+
 .buttons button:hover {
   color: white !important;
   background-color: var(--primaryColor);
 }
+
 /* About me */
 .about-img {
   height: 80vh;
 }
+
 .about .introduce {
   padding-top: 2rem;
 }
+
 .about .introduce h3 {
   text-transform: uppercase;
   font-size: 2rem;
   font: normal bold 49px/60px "Roboto", sans-serif;
   letter-spacing: 21px;
 }
+
 .about .introduce p {
   font-size: 1.3rem;
   margin-top: 1rem !important;
 }
+
 .intro {
   color: var(--primaryColor);
 }
+
 /* Services */
 .services {
   padding: 4rem 4rem;
 }
+
 .header p {
   padding-bottom: 3rem;
   color: var(--secondaryColor);
 }
+
 .header h3 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -121,6 +145,7 @@ nav .nav-item .nav-link {
   max-width: 100%;
   max-height: 100%;
 }
+
 .img {
   width: 80px;
   height: 80px;
@@ -130,6 +155,7 @@ nav .nav-item .nav-link {
   justify-items: center;
   padding: 0.5rem 0;
 }
+
 .card {
   width: 16rem;
   margin: 1rem auto !important;
@@ -138,75 +164,122 @@ nav .nav-item .nav-link {
   background: rgba(248, 252, 253, 0.973);
   transition: box-shadow 0.7s ease;
 }
+
 .card .card-body .card-title {
   font-weight: 600;
 }
+
 .card:hover {
   box-shadow: 3px 5px 25px -8px rgba(0, 0, 0, 0.7);
 }
+
 .services .container .row .col-md-4 {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 /* Work section */
 
 .work {
   padding: 4rem 4rem;
 }
+
 .work .grid .col-md-4 img {
   max-width: 100%;
   max-height: 100%;
 }
-.work .grid .col-md-4 .work-img {
-}
+
+.work .grid .col-md-4 .work-img {}
+
 .work h2 {
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .work h2 span.logo {
   font-weight: 700;
   font-size: 5rem;
   padding-top: 0;
   padding-bottom: 0;
 }
-.work .grid h2 + h2 {
+
+.work .grid h2+h2 {
   margin-bottom: 1rem;
 }
+
 .work .buttons-group {
   margin: 3rem 0;
+  display: flex;
+  gap: 1rem;
 }
+
+.work .buttons-group .element {
+  display: flex !important;
+  align-items: center;
+
+
+}
+
+.buttons-group .element button {
+  font-size: .95rem !important;
+}
+
+.buttons-group .element button:hover {
+  color: #ff4f5a;
+  opacity: .8;
+}
+
+.buttons-group .element a {
+  color: var(--primaryColor);
+  font-size: .5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px !important;
+}
+
+
+.buttons-group .element a:hover {
+  opacity: 0.8;
+}
+
 .work .buttons-group button {
   background-color: transparent;
   border: none;
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
-  margin-right: 2rem;
+  margin-right: 0;
 }
+
 .work .buttons-group button.active {
   color: var(--primaryColor);
 }
+
 .work .buttons-group button:focus,
 .work .buttons-group button:active {
   outline: none;
 }
+
 .work .grid .element-item h3 {
   font-weight: 600;
   text-transform: uppercase;
   margin: 1rem 0;
   font-size: 1.5rem;
 }
+
 .work .grid .element-item p {
   color: var(--secondaryColor);
   margin: 0;
   padding: 0;
   margin-bottom: 3rem;
 }
+
 .work .grid .element-item .work-img:hover img {
   filter: brightness(1.02) drop-shadow(1px 8px 30px #b1afaf);
   transition: all 0.6s;
 }
+
 /* navbar fixed */
 
 .navbar_fixed {
@@ -226,15 +299,18 @@ nav .nav-item .nav-link {
 .experience {
   padding: 4rem 4rem;
 }
+
 .experience .header-section h3 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 2rem;
 }
+
 .experience .header-section h6 {
   color: var(--secondaryColor);
   padding-bottom: 3rem;
 }
+
 .experience .timeline {
   margin: 0 auto;
   padding: 2rem 2rem;
@@ -243,10 +319,12 @@ nav .nav-item .nav-link {
   border-radius: 0.8rem;
   background: rgba(0, 0, 0, 0.03);
 }
+
 .experience .timeline ul {
   margin: 0 auto;
   position: relative;
 }
+
 .experience .timeline li {
   position: relative;
   list-style-type: none;
@@ -254,20 +332,24 @@ nav .nav-item .nav-link {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
 }
+
 .experience .timeline li:last-of-type {
   padding-bottom: 0;
   margin-bottom: 0;
   border: none;
 }
+
 .experience .timeline li h3 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.5rem;
   opacity: 0.5;
 }
+
 .experience .timeline li p {
   font-size: 0.8rem;
 }
+
 .experience .timeline li::before,
 .experience .timeline li:after {
   position: absolute;
@@ -275,6 +357,7 @@ nav .nav-item .nav-link {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .experience .timeline li::before {
   content: attr(data-date);
   left: -18rem;
@@ -283,6 +366,7 @@ nav .nav-item .nav-link {
   color: var(--secondaryColor);
   font-size: 0.9rem;
 }
+
 .experience .timeline li:after {
   content: "";
   box-shadow: 0 0 0 4px var(--secondaryColor);
@@ -291,28 +375,34 @@ nav .nav-item .nav-link {
   height: 1rem;
   width: 1rem;
 }
+
 /* Technologies */
 .technologies {
   padding: 4rem 4rem;
 }
+
 .technologies h3 {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .technologies h6 {
   font-size: 0.9rem;
   padding-bottom: 3rem;
   color: var(--secondaryColor);
 }
+
 .technologies img {
   max-width: 100%;
   max-height: 100%;
   filter: brightness(0.7);
 }
+
 .technologies img:hover {
   filter: brightness(1);
 }
+
 .technologies .tech-img {
   width: 100px;
   height: 100px;
@@ -321,6 +411,7 @@ nav .nav-item .nav-link {
   justify-content: center;
   align-items: center;
 }
+
 .technologies .tech-img h3 {
   font-size: 0.8rem;
   font-weight: 700;
@@ -328,33 +419,40 @@ nav .nav-item .nav-link {
   margin-top: 1.5rem;
   text-transform: none;
 }
+
 .footer {
   padding: 4rem 4rem;
 }
+
 .footer h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
 .footer .copy {
   margin-top: 1rem;
   font-size: 0.7rem;
   font-weight: 600;
 }
+
 .footer img {
   max-width: 100%;
   max-height: 100%;
 }
+
 .footer .social-medias {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
+
 .footer .social-medias .img {
   width: 40px;
   height: 40px;
 }
+
 /* Responsive */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
@@ -362,72 +460,92 @@ nav .nav-item .nav-link {
     overflow-x: hidden !important;
     width: 100%;
   }
+
   .navbar {
     padding: 2%;
     margin: 0;
   }
+
   .navbar button.navbar-toggler {
     margin-right: 1.5rem;
   }
+
   .showcase {
     margin: 0;
     padding-left: 0.5rem;
   }
+
   .showcase .headers h5 {
     font-size: 1rem;
   }
+
   .showcase .headers h3 {
     font-size: 2.5rem;
   }
+
   .showcase .headers h6 {
     font-size: 1.5rem;
   }
+
   .showcase .headers .buttons button {
     padding: 0.2rem 0.5rem !important;
     display: inline;
     margin-top: 0.4rem;
   }
+
   .about {
     padding: 0.5rem 0.5rem;
   }
+
   .about img {
     display: none;
   }
+
   .about .container .row .col-md-6 {
     padding: 0.4rem 0.4rem;
   }
+
   .about .container .row .col-md-6 .about-img {
     height: 0vh !important;
   }
+
   .about .container .row .col-md-6 .introduce h3 {
     font-size: 1.5rem;
     padding: 0.5rem 0.3rem;
   }
+
   .about .container .row .col-md-6 .introduce p {
     font-size: 1rem;
   }
+
   .about .container .row .col-md-6 .introduce .buttons button {
     margin-top: 0.4rem;
   }
+
   .services .header {
     align-items: center;
     justify-content: center;
     align-self: center;
     justify-self: center;
   }
+
   .container {
     padding: 0rem 0.5rem;
   }
+
   .row {
     padding: 0;
   }
+
   .col-md-6,
   .col-sm-12 {
     padding: 0 0.5rem;
   }
+
   .experience {
     display: none;
   }
+
   .work .buttons-group .work-button {
     display: block;
   }
